@@ -76,5 +76,5 @@ account for common misconfigurations:
 ```cmd
 python security_check.py
 ```
-
+![Python File](images/security.check)
 
