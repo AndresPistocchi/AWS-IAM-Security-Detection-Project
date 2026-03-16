@@ -54,6 +54,9 @@ You should see your Account ID and IAM user ARN returned.
 | IAM user MFA | ✅ |
 | CloudTrail enabled | ✅ |
 | No root access keys | ✅ |
+| Secure Password Policy | ✅ |
+| 90 day Access Key Age Policy | ✅ |
+| S3 Bucket Access Policy | ✅ |
 
 ---
 
@@ -65,44 +68,13 @@ account for common misconfigurations:
 - IAM users missing MFA
 - CloudTrail status
 - Root account access keys
+- Access Key Age
+- Password Policy
+- S3 Bucket Public Access
 
 ### Run it:
 ```cmd
 python security_check.py
 ```
 
-### Example output:
-````
-🔍 Running AWS Security Checks...
 
---- Checking MFA on IAM Users ---
- admin-user has MFA enabled
-
---- Checking CloudTrail Status ---
-✅ Trail found: my-security-trail
-
---- Checking Root Account Access Keys ---
-✅ No root access keys found - good!
-
-✅ Security check complete!
-````
-
----
-
-## What I Learned
-
-- AWS IAM fundamentals and least privilege principles
-- Why root account should never be used day-to-day
-- How CloudTrail provides audit logging across an AWS account
-- How to use boto3 to programmatically audit AWS security configurations
-
----
-
-## Next Steps
-
-- Enable GuardDuty for threat detection
-- Expand the security check script with more misconfiguration checks
-- Build a CI/CD pipeline with SAST scanning
-- Forward CloudTrail logs to Splunk for monitoring
-
----
