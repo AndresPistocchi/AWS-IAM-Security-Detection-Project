@@ -1,2 +1,2 @@
-# AWS
-Working on projects with AWS
+# AWS Security Detection Pipeline
+
