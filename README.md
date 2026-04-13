@@ -1,2 +1,0 @@
-# AWS Security Detection Pipeline
-
