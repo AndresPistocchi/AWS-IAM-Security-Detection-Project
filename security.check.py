@@ -27,7 +27,7 @@ def send_to_splunk(event):
         data = {"event": event}
         requests.post(SPLUNK_HEC_URL, json=data, headers=headers, timeout=3)
     except Exception as e:
-    print(f"[WARNING] Failed to send to Splunk: {str(e)}")
+        print(f"[WARNING] Failed to send to Splunk: {str(e)}")
 
 def log_event(severity, message, resource=None):
     event = {
