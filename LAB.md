@@ -3,7 +3,7 @@
 A beginner-friendly AWS security hardening project that sets up foundational 
 security controls and automates misconfiguration checks using Python (boto3).
 
-This project is part of my AppSec/Security Engineering learning path.
+This project is part of my AppSec/Security Engineering/Automation learning path.
 
 ---
 
